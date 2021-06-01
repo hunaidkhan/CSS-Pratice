@@ -1,0 +1,257 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        
+        *
+        {
+            font-family: 'Roboto';
+        }
+       
+        .container
+        {
+            background-color: #22424b;
+            color: white;
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 5em 4em;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1100px;
+            align-self: center;
+            margin: 0 auto;
+            align-items: flex-start;
+        }
+        .row
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        .wrapper
+        {
+            /* border: 1px solid black; */
+            width: 62%;
+            max-width: 600px;
+            margin-right: 2em;
+        }
+        img
+        {
+            max-width: 100%;
+        }
+        .header_img
+        {
+            width: 32%;
+            align-items: flex-start;
+        }
+        .header_button
+        {
+            font-size: 1rem;
+            padding: 0.6em 2em;
+            background-color: #38cfd9;
+            border: none;
+            font-weight: bold;
+            border-radius: 20px;
+      
+        }
+        .header_p
+        {
+            margin-bottom: 2.5em;
+            color: #c5cbcc;
+        }
+        .body-container
+        {
+            color: black;
+            width: 80%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 5em 4em;
+            
+        }
+        .body-items-col1
+        {
+            width: 62%;
+            max-width: 600px;
+            margin-right: 2em;
+        }
+        .body-items-col2
+        {
+            width: 26%;
+            background-color: #136C72;
+            color: white;
+            text-align: center;
+            padding: 2em 2em;
+        }
+        .body-items-col2-p
+        {
+            color: #c5cbcc;
+            margin-top: 0;
+        }
+        .body-items-col2-h1
+        {
+            margin-bottom: 0;
+        }
+        .body-items-col2-children + .body-items-col2-children
+        {
+            margin-top: 3em;
+        }
+        /* navbar styling */
+        .navigation_bar
+        {
+            background-color: cadetblue;
+            padding: 3em 2em;
+            width: 84.9%;
+            max-width: 1170px;
+            margin: 0 auto;
+            min-width: max-content;
+            display: flex;
+            justify-content: space-between;
+        }
+        .list
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* border: 1px solid black; */
+            color: whitesmoke;
+            align-items: center;
+        }
+        .list_items + .list_items{
+            margin-left: 2em;
+        }
+        .nav_button
+        {
+            background-color: #38cfd9;
+            color: white;
+            padding: 0.4em 3em;
+            border-radius: 20px;
+            
+        }
+        @media (max-width: 600px){
+            .container{
+                display: flex;
+                flex-direction: column;
+                width: 130%;
+                justify-content: center;
+                align-items: center;
+                padding: 4em;
+            }
+            .wrapper{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                /* border: 1px solid black; */
+                margin-right: 0;
+            }
+            .navigation_bar{
+                visibility: hidden;
+                width: 0;
+            }
+            .header_img{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .header_button{
+                margin: 0 auto;
+                width: 100%;
+            }
+            .body-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 150%;
+                padding: 1em;
+                /* border: 1px solid red; */
+                /* margin: 0; */
+            }
+            .body-container > *{
+                /* border: 1px solid black; */
+            }
+            .body-items-col1{                
+                width: 90%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 0.1vh;
+                
+                /* margin: 0 4em;
+                max-width: 600px; */
+                /* border: 1px solid black; */
+            }
+            .body-items-col2{                
+                width: 100%;
+                /* border: 1px solid black; */
+            }
+            .body-items-col2-p{                
+                max-width: 500px;
+                margin: 1em auto;
+                /* border: 1px solid black; */
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- <section class="header">
+        <nav class="navigation_bar">
+            
+            <ul class="list">
+                <li class="list_items nav_logo"><a href="#"><img src="img/logo.svg" alt=""></a></li>
+                <li class="list_items">Home</li>
+                <li class="list_items">About</li>
+                <li class="list_items">Contact</li>
+            </ul>
+            <ul class="list">
+                <li class="list_items push-right">Sign in</li>
+                <li class="list_items nav_button push-right">Sign up</li>
+            </ul>
+        </nav> -->
+
+        <div class="container">
+            <div class="header_img"><img src="img/hero-img.jpg" alt=""></div>
+            <div class="wrapper">
+                <h1 class="header_h1">Responsive layouts don't have to be a struggle
+                </h1>
+                <p class="header_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ea fuga numquam. Atque deserunt consequuntur rem corrupti omnis facilis magnam distinctio ipsa delectus velit, fugit vero dolore ad modi a.</p>
+                <button class="header_button">I WANT TO LEARN</button>
+            </div>
+
+            
+        </div>
+    </section>
+    <section class="body">
+        <div class="body-container row">
+            <div class="body-items-col1">
+                <h1 class="body-col1-h1">Quality designs made custom, on demand, just for you.</h1>
+                <p class="body-col1-p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum hic debitis officia necessitatibus facere. Illum provident eligendi velit perferendis pariatur, nobis mollitia nostrum impedit quaerat rerum inventore magnam. Officia, tempore?</p>
+                <p class="body-col1-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nihil repellendus, asperiores tenetur ea temporibus ducimus dolore, consequuntur nostrum fugiat dolorum dignissimos voluptate deleniti, voluptatem provident praesentium maiores necessitatibus deserunt?</p>
+            </div>
+            <div class="body-items-col2">
+                <div class="body-items-col2-children">
+                    <h1 class="body-items-col2-h1">Cheap</h1>
+                    <p class="body-items-col2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit reprehenderit iste sed odio beatae eaque fugit minus hic amet!</p>
+                </div>
+                <div class="body-items-col2-children">
+                    <h1 class="body-items-col2-h1">Quick</h1>
+                    <p class="body-items-col2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit reprehenderit iste sed odio beatae eaque fugit minus hic amet!</p>
+                </div>
+                <div class="body-items-col2-children">
+                    <h1 class="body-items-col2-h1">Quality</h1>
+                    <p class="body-items-col2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit reprehenderit iste sed odio beatae eaque fugit minus hic amet!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
