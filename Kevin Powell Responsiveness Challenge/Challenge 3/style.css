@@ -1,0 +1,26 @@
+.container
+{
+    background-color: #23424A;
+    color: white;
+    font-family: sans-serif;
+    padding: 2em 1em;
+    width: 100%;
+}
+.wrapper
+{
+    max-width: 80%;
+    /* border: 1px solid yellow; */
+
+}
+.limiter
+{
+    width: 60%;
+    /* border: 1px solid pink; */
+}
+button{
+    background-color:rgb(59, 248, 239);
+    border: none;
+    padding: 0.5em 3em;
+    border-radius: 20px;
+    font-size: 1em;
+}

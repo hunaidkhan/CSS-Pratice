@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html
+        {
+            font-family: sans-serif;
+        }
+        .header
+        {
+            background-color: rgb(50, 50, 73);
+            width: 100%;
+        }
+        .wrapper
+        {
+            max-width: 700px;
+            
+            color: white;
+            font-family: sans-serif;
+        }
+        .wrapper > h1
+        {
+            padding: 2em 0 0 1em;
+        }
+        .wrapper > p
+        {
+            padding-left: 2em;
+        }
+        .wrapper > button{
+            margin: 0.6em 0 3em 2em;
+            padding: 0.5em 3em;
+            font-size: 1em;
+            background-color: turquoise;
+            border: none;
+            border-radius: 20px;
+
+        }
+        .three-section
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 4em 1em;
+            max-width: 1700px;
+        }
+        .items
+        {
+            text-align: center;
+            padding: 0 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .two-section
+        {
+            background-color: rgb(51, 45, 87);
+            margin: 0;
+        }
+        .flex-container
+        {
+            display: flex;
+            flex-direction: row;
+            /* background-color: rgb(51, 45, 87); */
+            color: white;
+            width: 100vw;
+            margin: 2em 0;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+            margin: 0;
+        }
+        .flex-items
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            margin: 0.4em 3em;
+        }
+        .flex-items>h1{
+            margin-bottom: 0.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <h1>Responsive Layouts don't have to be a struggle</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident necessitatibus incidunt eaque unde reprehenderit commodi pariatur, esse quo aliquid molestias.</p>
+            <button>Try Now!</button>
+        </div>
+    </div>
+    <section class="three-section">
+        <div class="container">
+            <div class="items">
+                <h1>Create</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis doloremque, voluptate inventore mollitia, aspernatur reiciendis et harum similique perferendis quibusdam aut beatae iste architecto minus magnam quae nihil non consequatur corporis possimus error facere eos. Rem consequatur quod similique.</p>
+            </div>
+            <div class="items">
+                <h1>Something</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, sint. Itaque obcaecati non velit ea suscipit reprehenderit dolor unde fugit optio impedit veniam saepe qui quo ut quisquam repellendus nam animi voluptatem, quia iste. Repellat quisquam voluptate saepe tempora explicabo.</p>
+            </div>
+            <div class="items">
+                <h1>New</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam praesentium exercitationem sed odit, voluptates voluptate nam deleniti molestias dolorum fugiat natus, necessitatibus atque? Perferendis, neque suscipit nihil hic tempora in distinctio accusantium eaque ipsum cupiditate architecto possimus. Praesentium, nulla quia!</p>
+            </div>
+        </div>
+    </section>
+    <section class="two-section">
+        <div class="flex-container">
+            <div class="flex-items">
+                <h1>Cheap</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium obcaecati ea esse omnis distinctio corporis! Dicta facilis voluptate rerum doloremque.</p>
+            </div>
+            <div class="flex-items">
+                <h1>Quick</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus illo in ad quasi totam minus optio quisquam recusandae unde nemo!</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
